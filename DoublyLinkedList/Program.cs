@@ -13,3 +13,16 @@ namespace DoublyLinkedList
         public Node next;/*points to the succeeding nodr*/
         public Node prev;/*points to the preceeding node*/
     }
+    class DoubleLinkedList
+    {
+        Node START;
+        public DoubleLinkedList()
+        {
+            START = null;
+        }
+        public void addNode()/*Adds a new node*/
+        {
+
+        }
+    }
+}
