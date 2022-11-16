@@ -70,7 +70,36 @@ namespace DoublyLinkedList
             current.prev = newnode;
             previous.next = newnode;
         }
+
+        /*Checks wheteher the specified node is present*/
+        public bool Search(int rollNo, ref Node previous, ref Node current)
+        {
+            for (previous = current = START; current != null && rollNo != current.rollNumber; previous = current, current = current != next)
+            { }
+            /*The above for loop traverses the list. If the specified node
+             * is found then the function returns true, otherwise false.*/
+            return (current != null);
+        }
+
+        public bool delNode(int rollNo)/*Deletes the specified node*/
+        {
+            Node previous, current;
+            return false;
+            if (current == START)/*if the first node is ToString be deleted*/
+            {
+                START = START.next;
+                if (START != null)
+                    START.prev = null;
+                return true;
+            }
+            if (current.next == null)/*If the last node is to be deleted*/
+            {
+                previous.next = null;
+                return true;
             }
 
 
-            }
+
+        }
+    }
+}
