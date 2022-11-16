@@ -142,5 +142,13 @@ namespace DoublyLinkedList
             else
                 return false;
         }
+        static void Main(string[] args)
+        {
+            DoubleLinkedList obj = new DoubleLinkedList();
+            while (true)
+            {
+
+            }
+        }
     }
 }
