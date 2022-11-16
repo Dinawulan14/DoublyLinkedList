@@ -13,5 +13,3 @@ namespace DoublyLinkedList
         public Node next;/*points to the succeeding nodr*/
         public Node prev;/*points to the preceeding node*/
     }
-}
-
