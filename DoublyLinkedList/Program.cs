@@ -147,7 +147,10 @@ namespace DoublyLinkedList
             DoubleLinkedList obj = new DoubleLinkedList();
             while (true)
             {
+                try
+                {
 
+                }
             }
         }
     }
